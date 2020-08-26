@@ -1,0 +1,619 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body {
+    background-color:#E1F4F3;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item{
+    padding-left: 20px;
+}
+
+/**************************************************************TITLE***********************************************************************************/
+/**********************SLIDE SHOW******************************/
+
+
+.first-set-slider, .second-set-slider, .third-set-slider {
+    height: 100vh;
+    position: relative;
+}
+.first-set-slider > *, .second-set-slider > *, .third-set-slider > * {
+    z-index: 2;
+}
+.first-set-slider::after, .second-set-slider::after, .third-set-slider::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+
+.first-set-slider:nth-of-type(1) {
+    background: url(../Images/logo.jpg) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.second-set-slider:nth-of-type(2) {
+    background: url(../Images/Handshake.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.third-set-slider:nth-of-type(3) {
+    background-image: url(../Images/agric3-big-pic.jpg);
+    background-size: cover;
+}
+
+.on-slider-text {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.on-slider-text h6 {
+    margin-bottom: 5%;
+    font-size: 1.8rem;
+}
+
+.on-slider-text h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 60%;
+}
+
+@media (max-width: 2000px){
+    .on-slider-text h3{
+        font-size: 1.8rem;
+    }
+}
+
+.on-slider-text p {
+    margin-top: 3%;
+}
+
+
+/***********************************************************SLIDE SHOW******************************************************************************/
+
+/*************************************************************CONTENT******************************************************************************/
+.first-image-display {
+    padding: 10% 10%;
+}
+.first-image-display h2 {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 2.5rem;
+    color: #323b43;
+}
+.first-set-img-div div {
+    text-align: center;
+}
+
+.first-set-img {
+    width: 100%;
+    height: 14.305rem;
+}
+
+.div-img-text h4 {
+    padding-top: 5%;
+    color: #323b43;
+}
+.div-img-text h4:hover {
+    color: #2a7d2e;
+}
+/*************************************************************CONTENT******************************************************************************/
+
+/************************************************************ABOUT US******************************************************************************/
+
+.about-us {
+    padding: 5% 8%;
+    background-color: #f2fbf2;
+}
+.about-us-first-div {
+    text-align: center;
+    margin-bottom: 7%;
+}
+.about-us-first-div h3 {
+    font-size: 2.3125rem;
+    line-height: 3.125rem;
+    font-weight: bold;
+    color: #323b43;
+}
+.about-us h4 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    color: #323b43;
+}
+
+.about-us-first-div p {
+    color: #2a7d2e;
+    font-size: 1.125rem;
+}
+.about-us-text p {
+    font-size: 1.25rem;
+}
+.about-us-text p::first-letter {
+    font-size: 2.5rem;
+}
+
+/*************************************************************WHY CHOOSE US***************************************************************************/
+.why-choose-us {
+    padding: 7% 8%;
+}
+.why-choose-us-div {
+    transition: box-shadow 0.5s;
+}
+
+.why-choose-us-div:hover {
+    box-shadow: 0 0 1rem rgba(0,0,0,.6);
+    background-color: rgba(255,255,255,.25);
+}
+
+.why-choose-us-div:hover .fa-users, .why-choose-us-div:hover .fa-shield-alt, .why-choose-us-div:hover .fa-money-bill-alt, .why-choose-us-div:hover .fa-cogs, .why-choose-us-div:hover .fa-arrow-alt-circle-right, .why-choose-us-div:hover .fa-industry{
+    background-color: #2a7d2e;
+}
+
+.why-choose-us-sub-div {
+    padding: 0 15px 0 15px;
+}
+.why-choose-us h4 {
+    margin-bottom: 3.125rem;
+    text-align: center;
+    font-size: 2.8125rem;
+    color: #323b43;
+    font-weight: bold;
+
+}
+
+.why-choose-us-div h5 {
+    margin: 1.25rem 0 1.25rem 0;
+    color: #323b43;
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.why-choose-us-div p {
+    text-align: center;
+    color: #323b43;
+}
+
+.why-choose-us h4 span {
+    display: block;
+    font-size: 18px;
+    color: #2a7d2e;
+}
+
+
+.fa-users, .fa-shield-alt, .fa-money-bill-alt, .fa-cogs, .fa-arrow-alt-circle-right, .fa-industry {
+    border: 4px solid #2a7d2e;
+    padding: 8%;
+    border-radius: 100%;
+    transition: background-color 0.5s;
+}
+
+.why-choose-us-icon {
+    text-align: center;
+    margin-top: 10%;
+}
+
+/*************************************************************WHY CHOOSE US***************************************************************************/
+
+/*************************************************************TESTIMONIAL***************************************************************************/
+
+#testimonial {
+    background-color: #e2fae2;
+}
+
+.testimonial-carousel-item {
+    padding: 10% 20%;
+    position: relative;
+}
+
+.testimonial-carousel-inner {
+    background: url('../Images/banner5.jpg') fixed;
+    padding: 5% 0 5% 0;
+}
+
+.testimonial-carousel-inner h3 {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    font-size: 2.8125rem;
+    font-weight: bold;
+    line-height: 3.125rem;
+}
+    .testimonial-carousel-inner h3 span {
+        display: block;
+        font-size: 1.125rem;
+        color: #2a7d2e;
+    }
+
+.testimonial-carousel-inner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.testimonial-carousel-item p{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    padding: 3%;
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    color: #323b43;
+}
+
+.testimonial-carousel-item > * {
+    z-index: 2;
+}
+
+.testimonial-image {
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   position: relative;
+}
+
+/****************************************************************CONTACT US***************************************************************************/
+#contact-us {
+    padding: 5% 8%;
+}
+
+.contact-us-list ul {
+    margin-top: 1.875rem;
+    text-align: center;
+}
+.contact-us-list li {
+    display: block;
+    list-style-type: none;
+}
+/* .contact-us-list ul:first-child P{
+    text-align: center;
+} */
+.contact-us-list li.green {
+    color: #2a7d2e;
+    margin: 0 1.25rem;
+    font-weight: bold;
+}
+.contact-us-list .phone {
+    color: #323b43;
+    font-size: 1.25rem;
+}
+
+.button-list a {
+    display: inline-block;
+    padding: 0.75rem 2.5rem;
+    background-color: #2a7d2e;
+    text-decoration: none;
+    color: white;
+}
+.button-list a:hover {
+    background-color: #323b43;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/***********************************************************INVESTMENT**********************************************************************/
+
+#investment-section {
+    background-color: #e2fae2;
+}
+#investment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 10%;
+    
+}
+#investment-section h4 {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 2.5rem;
+    color: #323b43
+}
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, .5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover {
+    height: 420px;
+}
+.container .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -75px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card .content a:hover {
+    text-decoration: none;
+}
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+    transition-delay: 0.3s;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #323b43);
+    border-radius: 6px;
+}
+
+/***********************************************************************footer************************************************************************/
+
+.footer-container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background: url('../Images/banner3.jpg') fixed;
+    position: relative;
+}
+
+.footer-container-fluid::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 1;
+}
+.footer-container-fluid > * {
+    z-index: 2;
+}
+
+.footer-container-fluid ul {
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: rotate(-0deg) skew(0deg);
+    margin-top: 10%;
+}
+.footer-container-fluid ul li {
+    position: relative;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.footer-container-fluid ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 30px !important;
+}
+.footer-container-fluid ul li:hover span {
+    z-index: 1000;
+    transition: 0.5s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+    transition: 0.2;
+}
+.footer-container-fluid ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+.footer-container-fluid ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+.footer-container-fluid ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+.footer-container-fluid ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+.footer-container-fluid ul li:hover span:nth-child(1) {
+    transform: translate(0px, 0px);
+    opacity: 0.2;
+}
+.footer-container-fluid ul li:nth-child(1):hover span {
+    background: #3b5999;
+}
+.footer-container-fluid ul li:nth-child(2):hover span {
+    background: #55acee;
+}
+.footer-container-fluid ul li:nth-child(3):hover span {
+    background: #25d366;
+}
+.footer-container-fluid ul li:nth-child(4):hover span {
+    background: #0077B5;
+}
+.footer-container-fluid ul li:nth-child(5):hover span {
+    background: #e4405f;
+}
+
+
+/***********************************************************PRIVATE INVESTMENT FORM*******************************************************************/
+
+#private-investment-form {
+    padding: 5% 10%;
+}
+#private-investment-form .container-fluid-form {
+    margin-left: 20%;
+}
+.container-fluid-form h3 {
+    margin-bottom: 2%;
+    font-family: sans-serif;
+}
+#private-investment-form ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  #private-investment-form li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  #private-investment-form li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #private-investment-form li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  #private-investment-form input[type='text'], #private-investment-form select, #private-investment-form input[type='date'], #private-investment-form textarea, #private-investment-form input[type='number'], #private-investment-form input[type='email']{
+      width: 400px;
+      padding: 5px;
+      border: none;
+      border-bottom: 1px solid silver;
+      outline: none; 
+  }  
+
+  textarea {
+      resize: none;
+  }
+
+
+/****************************************************************PRODUCTS****************************************************************************/
+
+/* #products{
+    
+} */
+
+#products h2 {
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    font-size: 2.5rem;
+    color: #323b43;
+}
+
+#products h4 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 3%;
+}
+
+#products .product-images {
+    text-align: center;
+    /* height: fit-content; */
+    /* border: 1px solid silver; */
+    margin-bottom: 40px;    
+    transition: 1s;
+}
+#products .product-images:hover {
+    transform: scale(0.5, 0.5);
+}
+
+
+@media (max-width: 575px) {
+    #products .product-images {
+        width: 50%;
+    }
+}
+
+    #products .product-images img {
+        width: 100%;
+        height: 70%;
+    }
+
+        #products .product-images p {
+            color: #323b43;
+            text-decoration: underline;
+            font-size: 1.25rem;
+        }
+            #products .product-images p span {
+                font-weight: 400;
+            }
+/***********************************************************DECLARATION*******************************************************************************/
+.declaration {
+    position: relative;
+}
+
+
+.declaration p {
+    text-align: justify;
+    width: 50%;
+    display: inline-block;
+    padding-left: 2%;
+}
+
+.declaration input[type='checkbox'] {
+    position: absolute;
+    top: 19%;
+}
+.declaration input[type='text'], .declaration input[type='date'] {
+    width: 20%;
+}
