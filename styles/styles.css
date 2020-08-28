@@ -513,7 +513,20 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
-    overflow: auto;
+    overflow-y: scroll;
+  }
+
+  @media (max-width:772px) {
+    #private-investment-form ul {
+        visibility: hidden;
+    }
+
+    #private-investment-form .container-fluid-form {
+        margin-left: 0;
+    }
+    #private-investment-form input[type='text'], #private-investment-form select, #private-investment-form input[type='date'], #private-investment-form textarea, #private-investment-form input[type='number'], #private-investment-form input[type='email']{
+        width: 300px;
+    }
   }
   
   #private-investment-form li a {
@@ -617,3 +630,62 @@ h1, h2, h3, h4, h5, h6 {
 .declaration input[type='text'], .declaration input[type='date'] {
     width: 20%;
 }
+
+
+/******************************************************SIGN-UP PAGE*********************************************************/
+
+#sign-up-page{
+    padding: 10% 15%;
+    background: url('../Images/adele-payman-2oYMwuFgnTg-unsplash.jpg') fixed no-repeat;
+    background-size: cover;
+}
+#sign-in-page {
+    padding: 10% 15%;
+    background: url('../Images/agric-big-pic.jpg') fixed no-repeat;
+    background-size: cover;
+}
+
+#sign-in-page .row, #sign-up-page .row {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* #sign-in-page .sign-in-text {
+    margin-top: 10%;
+} */
+
+#sign-in-page h3 {
+    color: #323b43;
+    font-family: cursive;
+}
+
+#sign-in-page .sign-in {
+    border: 1px solid  rgb(97, 5, 5);
+    border-radius: 5px;
+    padding: 10% 5%;
+    background: linear-gradient(to bottom, transparent, #e79cc2);
+}
+
+#sign-in-page input:focus {
+    box-shadow: 0px 0px 2px blueviolet;
+}
+
+#sign-in-page button, #sign-up-page button {
+    margin-top: 10%;
+}
+
+#sign-up-page .sign-up {
+    border-radius: 5px;
+    padding: 10% 5%;
+}
+
+#sign-up-page h3 {
+    position: relative;
+    top: 20%;
+    font-family: cursive;
+}
+
+#sign-up-page .radio {
+    margin-top: 5%;
+}
+

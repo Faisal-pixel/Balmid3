@@ -17,7 +17,7 @@
 <body>
     <section id="title">
         <!----------------------------------------------NAV BAR----------------------------------------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light"+>
             <a href="#" class="navbar-brand"><img src="Images/logo23.png" width="150px" height="70px" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,11 +33,23 @@
                     <li class="nav-item">
                         <a href="product.html" class="nav-link">Products</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="#investment-section" class="nav-link">Account</a>
+                    </li> -->
+                    <li>
+                        <div class="dropdown">
+                            <a class="btn btn-link dropdown-toggle" style="color: rgba(0,0,0,.5); text-decoration: none;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Account
+                            </a>
+                          
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="sign-in.html">Sign-in</a>
+                              <a class="dropdown-item" href="sign-up-page.html">Sign-up</a>
+                            </div>
+                          </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
+                        <a href="#services" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
                         <a href="#Contact-us" class="nav-link">Contact Us</a>
@@ -89,7 +101,7 @@
 
     <section id="contents">
         <!----------------------------------------------------------------FIRST IMAGE DISPLAY------------------------------------------------------>
-        <section class="first-image-display">
+        <section class="first-image-display" id="services">
             <h2>Our Services</h2>
             <div class="row">
                 <div class="col-lg-4 col-md-6 first-set-img-div">
@@ -183,7 +195,9 @@
 
     <!-----------------------------------------------------------------INVESTMENT----------------------------------------------------------------------->
     <section id="investment-section">
-        <h4>Investment Plan</h4>
+        <h4>Investment Plan
+            <span style="display: block; font-size: 30px; color: #2a7d2e;">Tap to see the different kinds of investment plan</span>
+        </h4>
     <div id="investment">
         <div class="container">
             <div class="card">
@@ -192,24 +206,30 @@
                 </div>
                 <div class="content">
                     <h2> <a href="Individual-Investment-personal-details.html">Individual Investment</a></h2>
+                    <!-- <a href="sign-in.html"><button class="btn btn-outline-dark">Sign in</button></a>
+                    <a href="sign-up-page.html"><button class="btn btn-outline-dark">Sign-up</button></a> -->
                     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eismod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam</p> -->
                 </div>
             </div>
-            <div class="card">
+            <!-- <div class="card">
                 <div class="imgBx">
                     <img src="Images/product2.jpg" width="300px" height="200px" alt="">
                 </div>
                 <div class="content">
                     <h2><a href="#">Joint Investment</a></h2>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eismod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam</p> -->
+                    <a href="sign-in.html"><button class="btn btn-outline-dark">Sign in</button></a>
+                    <a href="sign-up-page.html"><button class="btn btn-outline-dark">Sign-up</button></a>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eismod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam</p> 
                 </div>
-            </div>
+            </div> -->
             <div class="card">
                 <div class="imgBx">
                     <img src="Images/procuct3.jpg" width="300px" height="200px" alt="">
                 </div>
                 <div class="content">
                     <h2><a href="#">Corporate Investment</a></h2>
+                    <!-- <a href="sign-in.html"><button class="btn btn-outline-dark">Sign in</button></a>
+                    <a href="sign-up-page.html"><button class="btn btn-outline-dark">Sign-up</button></a> -->
                     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eismod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam</p> -->
                 </div>
             </div>
@@ -258,7 +278,7 @@
         <div class="container-fluid" id="Contact-us">
             <div class="row">
                 <div class="col-lg-6">
-                    <form action="" class="form">
+                    <form action="mailto:ifo@balmidindustires.com" method="POST" enctype="text/plain" class="form">
                         <!-- <table>
                             <tr>
                                 <td><label for="name">Name</label></td>
@@ -281,7 +301,7 @@
                             </tr>
                         </table> -->
 
-                        <form action="mailto:info@balmidindustries.com" method="post" enctype="text/plain">
+                        
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" name="Name " id="" class="form-control">
@@ -301,7 +321,6 @@
                             <div>
                                 <button class="btn btn-block btn-outline-dark">Submit</button>
                             </div>
-                        </form>
                     </form>
                 </div>
                 <div class="col-lg-6 contact-us-list">
