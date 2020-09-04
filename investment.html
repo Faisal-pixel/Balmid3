@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Private Investment</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
             <li><a href="Next-of-kin.html">Next of kin</a></li>
             <li><a href="#about">Upload</a></li>
             <li><a href="declaration.html">Declaration</a></li>
-            <li><a href="payment.html">Make payment</a></li>
+            <li><a href="acknowledgement.html">Acknowledgement</a></li>
             <li><a href="#">Submit</a></li>
         </ul>
         <div class="container-fluid container-fluid-form">
@@ -27,11 +28,11 @@
             <table>
                 <tr>
                     <td>Investment Plan: </td>
-                    <td>
+                    <td >
                         <select name="" id="">
                             <option value="">Select</option>
-                            <option value="">Crop</option>
-                            <option value="">Poultry & Livestock</option>
+                            <option value="" id="crop" onclick="showProduct()">Crop</option>
+                            <option value="" id="Poultry-Livestock">Poultry & Livestock</option>
                             <option value="">Fishery</option>
                             <option value="">Animals</option>
                         </select>
