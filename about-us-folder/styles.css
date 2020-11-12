@@ -1,45 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: url('../Images/logo.jpg') fixed no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: relative;
+  background: url("../Images/logo.jpg") fixed no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
 }
 
 body::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(239, 240, 233, 0.8);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(239, 240, 233, 0.8);
+}
+.preload {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 3;
+  background-image: url("../Images/logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  transition: opacity 2s ease;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+.cloud1,
+.cloud2,
+.cloud3 {
+  position: absolute;
+  height: 100px;
+  right: 0%;
+  animation: clouds 3s ease infinite;
+}
+
+.cloud1 {
+  top: 20%;
+  transform: translate(100%, -20%);
+}
+/* .cloud2 {
+    top: 50%;
+    transform: translate(100%, -50%);
+    animation-delay: 2s;
+  } */
+.cloud3 {
+  top: 75%;
+  transform: translate(100%, -75%);
+  animation-delay: 3s;
+}
+
+@keyframes clouds {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 130%;
+  }
 }
 
 .about-us-main-page {
-    padding: 3% 20%;
+  padding: 3% 20%;
 }
 .about-us-main-page h1 {
-    text-align: center;
-    font-size: 3.75rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #323b43;
+  text-align: center;
+  font-size: 3.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #323b43;
 }
 .about-us-main-page > * {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 .about-us-main-text {
-    text-align: justify;
+  text-align: justify;
 }
 .about-us-main-text p {
-    line-height: 2;
-    font-size: 20px;
-    color: black;
-    
+  line-height: 2;
+  font-size: 20px;
+  color: black;
 }
